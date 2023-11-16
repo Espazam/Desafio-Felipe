@@ -1,18 +1,22 @@
-let nickname = "Espazam"
-let XP = 
+let nickname = "Espazam "
+let XP = 1000
 
-if(XP < 1000){
-console.log ("Ferro");
+let nivel;
+
+if (XP < 1000) {
+  nivel = "Ferro";
 } else if (XP >= 1001 && XP <= 2000) {
-  console.log("Bronze")
+  nivel = "Bronze";
 } else if (XP >= 2001 && XP <= 5000) {
-    console.log("Prata")
+    nivel = "Prata";
 } else if (XP >= 6.001 && XP <= 7000) {
-    console.log("ouro")
+    nivel = "Ouro";
 } else if (XP >= 7.001 && XP <= 8000) {
-    console.log("Platina")
+    nivel = "Platina";
 } else if (XP >= 8.001 && XP <= 10.000) {
-    console.log("Imortal")
+    nivel = "Imortal";
 } else if (XP >= 10.001) {
-    console.log("Radiante")
+    nivel = "Radiante";
 }
+
+console.log ("O Herói de nome " + nickname + " está no nível de " + nivel)
